@@ -1,0 +1,147 @@
+:root {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --text: #1f2328;
+  --muted: #8a8f98;
+  --accent: #f28a2e;
+  --accent-dark: #e07a1f;
+  --link: #1e4fa3;
+  --danger: #dc2626;
+  --border: #e6e6e6;
+  --dark: #101014;
+  --radius: 8px;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Regular.woff2') format('woff2');
+  src: url('./assets/fonts/Poppins-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Medium.woff2') format('woff2');
+  src: url('./assets/fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-SemiBold.woff2') format('woff2');
+  src: url('./assets/fonts/Poppins-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Bold.woff2') format('woff2');
+  src: url('./assets/fonts/Poppins-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: "Poppins", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #F9F9F9;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+}
+
+.main {
+  padding: 0 0 60px;
+}
+
+.hero {
+  position: relative;
+  min-height: 422px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: -40px;
+  padding-bottom: 130px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -24%;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/Основная-страница.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.page-status {
+  text-align: center;
+  color: var(--muted);
+  padding: 48px 0;
+}
+
+.form-error {
+  text-align: center;
+  color: #ff4d4f;
+  margin: 0 0 16px;
+  font-size: 15px;
+}
+
+.field-error {
+  color: #ff4d4f;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.field__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.field input.input--error,
+.field textarea.input--error {
+  border: 2px solid #ff4d4f;
+  outline: none;
+}

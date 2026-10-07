@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+mock/db.json
+mock/images/*.png
+mock/images/*.jpg
+mock/images/*.jpeg
+.DS_Store
+Thumbs.db

@@ -1,0 +1,205 @@
+.page-hero {
+    min-height: 251px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    pointer-events: none;
+}
+
+.page-hero::before {
+    content: " ";
+    position: absolute;
+    background-image: url('../images/Основная-страница.png');
+    width: 100%;
+    height: 100%;
+    top: -100px;
+}
+
+.page-hero__title {
+    margin: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 100px;
+}
+
+.container--form {
+    max-width: 760px;
+    padding-bottom: 48px;
+}
+
+.post-form {
+    background: #ffffff;
+    border: 1px solid #E5E5EA;
+    border-radius: 10px;
+    padding: 28px 238px 158px 239px;
+    margin-top: -68px;
+}
+
+.post-form__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.post-form__title {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 52px;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+body:has(.post-form) {
+    background: #f4f4f5;
+}
+
+.main:has(.post-form) {
+    background: #f4f4f5;
+}
+
+.post-form .field {
+    margin-bottom: -2px;
+}
+
+.post-form .field__label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    gap: 4px;
+}
+
+.upload-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.upload-area {
+    width: 200px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px 5px 16px;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    background-color: #ffffff;
+    color: #000000D9;
+    cursor: pointer;
+}
+
+.upload-area__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.field__wrapper {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.field textarea {
+    height: 98px;
+    resize: vertical;
+    min-height: 98px;
+    max-height: 100%;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+    color: #a6aab2;
+}
+
+.post-form__actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 4px;
+}
+
+.btn--yellow {
+    padding: 19px 30px;
+    width: 150px;
+    height: 51px;
+    background: #FFA902;
+    color: #ffffff;
+    border: 2px solid #FFA902;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 13px;
+}
+
+.btn--yellow-outline {
+    padding: 13px 30px;
+    width: 145px;
+    height: 51px;
+    background: #ffffff;
+    color: #FFA902;
+    border: 2px solid #FFA902;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 13px;
+}
+
+.btn__arrow {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.btn--outline {
+    background: #fff;
+    color: var(--text);
+    border-color: var(--border);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background-color: #ffffff;
+    padding: 50px 0 60px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 695px;
+    height: 141px;
+    position: relative;
+    text-align: center;
+}
+
+.modal__close {
+    position: absolute;
+    top: 9px;
+    right: 7px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.modal-message {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 100%;
+}

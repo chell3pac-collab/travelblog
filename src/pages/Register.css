@@ -1,0 +1,12 @@
+.reg-card__actions {
+  display: flex;
+  margin-top: 28px;
+}
+
+.reg-card__actions .btn {
+  width: 234px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 13px;
+  border: none;
+}
