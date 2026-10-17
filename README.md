@@ -1,9 +1,3 @@
-# TravelBlog — фронтенд + мок-сервер API
-
-Фронтенд по ТЗ и Swagger (/api/register, /api/login, /api/logout, /api/posts,
-/api/posts/{id}, /api/posts/{id}/comments, /api/user, /api/user/password)
-плюс мок-сервер API на чистом Node.js — настоящий бэкенд не требуется.
-
 ## Запуск (два терминала)
 
 ```bash
@@ -19,9 +13,6 @@ npm run dev
 Proxy в `vite.config.js` уже настроен на мок-сервер. Данные хранятся в
 `mock/db.json` (создаётся при первом запуске), загруженные фото — в
 `mock/images/`. Тестовый аккаунт: `demo@travelblog.com` / `12345`.
-
-Когда появится настоящий бэкенд — просто поменяйте `target` в
-`vite.config.js` (или задайте `VITE_API_URL` в `.env` и уберите proxy).
 
 ## Структура
 
